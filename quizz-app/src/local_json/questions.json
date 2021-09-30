@@ -1,6 +1,6 @@
-{
+[
 
-    "Q1": {
+  {
         "question": "Which stage of the software development lifecycle (SDLC) would include the  following activities; Consideration of the potential risks involved in developing software, Determining whether the project outcome will be worth the costs involved.",
         "answers" : [
             "Implementation / Deployment",
@@ -11,7 +11,7 @@
         ],
         "correct_answers": "Feasibility Study"
     },
-    "Q2": {
+     {
         "question": "Which of the following is a purpose of the software development lifecycle (SDLC)?",
         "answers" : [
             "To provide a suitable framework for planning a software development project",
@@ -23,7 +23,7 @@
         "correct_answers": "To provide a set of steps to create a software end-product"
     },
     
-    "Q3": {
+     {
         "question": "Which sequence puts the following stages in the SDLC in the CORRECT chronological order? a. testing, b. requirements analysis, c. maintenance, d. design",
         "answers" : [
             "b, d, a, c",
@@ -33,7 +33,7 @@
 
         ],
         "correct_answers": "b, d, a, c"
-    },"Q4": {
+    }, {
         "question": "Which of the following is NOT an iterative methodology?",
         "answers" : [
             "Waterfall",
@@ -45,7 +45,7 @@
         "correct_answers": "Waterfall"
     },
     
-    "Q5": {
+     {
         "question": "Which software development method allows software to be deployed for client use  after each iteration?",
         "answers" : [
             "Agile",
@@ -57,7 +57,7 @@
         "correct_answers": "Agile"
     },
     
-    "Q6": {
+     {
         "question": "Which of the following is a role of a domain expert?",
         "answers" : [
             "To provide insight into business products and processes",
@@ -69,7 +69,7 @@
         "correct_answers": "To provide insight into business products and processes"
     },
     
-    "Q7": {
+    {
         "question": "A software application used by the general public has been found to have a security  weakness. The problem has been diagnosed and a development project initiated to  correct the security weakness. The project team will include security domain  experts. At which stages in the development will it be the MOST important to involve the  domain experts?",
         "answers" : [
             "Feasibility study, code development",
@@ -81,7 +81,7 @@
         "correct_answers": "Design, testing"
     },
     
-    "Q8": {
+     {
         "question": "During the design stage of the SDLC, which of the following would be developed?",
         "answers" : [
             "Software specification",
@@ -93,7 +93,7 @@
         "correct_answers": "Software specification"
     },
     
-    "Q9": {
+    {
         "question": "Which of the following is a purpose of applying traceability and cross-referencing between software development deliverables?",
         "answers" : [
             "To identify requirements which have not been met",
@@ -105,7 +105,7 @@
         "correct_answers": "To identify requirements which have not been met"
     },
     
-    "Q10": {
+     {
         "question": "Interaction diagrams are a deliverable of which stage of the SDLC?",
         "answers" : [
             "Design",
@@ -116,7 +116,7 @@
         ],
         "correct_answers": "Design"
     },
-    "Q11": {
+     {
         "question": "Which of the following factors would be a potential candidate reason for choosing an Agile method for a software development project?",
         "answers" : [
             "The development project consists of a large distributed team",
@@ -128,7 +128,7 @@
         "correct_answers": "The customer has very few formally documented requirement"
     },
     
-    "Q12": {
+     {
         "question": "Which of the following would be responsibilities of the product owner in a software  development project using an agile method of scrum? a. Prioritising items on the backlog, b. Accepting stories as done, c. Managing the execution stage of the project, d. Representing the customer to the Agile team",
         "answers" : [
             "b, c and d only",
@@ -140,7 +140,7 @@
         "correct_answers": "a, b and d only"
     },
     
-    "Q13": {
+     {
         "question": "A company is developing application software for use by the general public using  the Scrum Methodology. Which of the following will NOT be a responsibility of the  Scrum Master?",
         "answers" : [
             "Help the development team to achieve their goals",
@@ -152,7 +152,7 @@
         "correct_answers": "Lead the development team"
     },
     
-    "Q14": {
+     {
         "question": "Which of the following are objectives of the maintenance stage of the SDLC? a. Identify and fix bugs before software is implemented (deployed) so that they do  not cause operational failures, b. Adapt and modify the software as users' needs change through time after implementation (deployment), c. Complete any testing that could not be finished before implementation  (deployment), d. Fix bugs identified during live operation of the software.",
         "answers" : [
             "a and b only",
@@ -164,7 +164,7 @@
         "correct_answers": "a and b only"
     },
     
-    "Q15": {
+     {
         "question": "Which of the following describes 'first-line support'?",
         "answers" : [
             "Correcting bugs in operational software",
@@ -176,7 +176,7 @@
         "correct_answers": "Dealing with incidents in order to restore service as quickly as possible"
     },
     
-    "Q16": {
+     {
         "question": "Which of the following is a TRUE statement about the software development  lifecycle (SDLC)?",
         "answers" : [
             "The SDLC should be used only with sequential development methodologies",
@@ -188,7 +188,7 @@
         "correct_answers": "The SDLC is independent of the software development methodology used"
     },
     
-    "Q17": {
+    {
         "question": "Which statement describes the use of the V-Model software development method in  the software development lifecycle (SDLC)?",
         "answers" : [
             "All seven stages of SDLC are performed for each iteration, with verification and  validation performed in the final stage",
@@ -200,7 +200,7 @@
         "correct_answers": "Each stage of the SDLC has a corresponding verification and validation stage"
     },
     
-    "Q18": {
+     {
         "question": "A software development project is being initiated, and the project manager has set  the following broad objectives for the software development team [ Focus on the customers, Energise the team, Eliminate waste, Learn quickly, Keep improving ] Which of the following methodologies has a focus on eliminating waste?",
         "answers" : [
             "Unified Process (UP)",
@@ -212,7 +212,7 @@
         "correct_answers": "Lean"
     },
     
-    "Q19": {
+     {
         "question": "A software development team includes application planners, software designers, coders, and technical architects and follows an agile approach to development. The  team is involved in testing, implementation (deployment) and maintenance of  software as needed.  Which of the following would be required by all the software development team members? a. communication skills, b. leadership skills, c. coding skills, d. shared responsibility ethos for the team's work",
         "answers" : [
             "a and b only",
@@ -224,7 +224,7 @@
         "correct_answers": "a and d only"
     },
     
-    "Q20": {
+     {
         "question": "When using Agile methodologies, it is common to have daily and / or weekly  progress meetings. Which of the following questions SHOULD NOT be asked to team members during  these daily / weekly progress meetings?",
         "answers" : [
             "Are there any impediments that prevent the team from meeting the goals of the  iteration?",
@@ -236,7 +236,7 @@
         "correct_answers": "Which team member is preventing the team from achieving the goals of the  iteration?"
     },
     
-    "Q21": {
+     {
         "question": "Which of the following would be used by a code developer?",
         "answers" : [
             "Business case",
@@ -248,7 +248,7 @@
         "correct_answers": "Technical design document"
     },
     
-    "Q22": {
+     {
         "question": "Software is being developed for a set of users who are only available to collaborate  during the analysis and acceptance testing parts of the project. They will also be  available to be trained on the new software before it goes live. Which of the following development approaches would be MOST appropriate given  the limited availability of the users?",
         "answers" : [
             "Kanban",
@@ -260,7 +260,7 @@
         "correct_answers": "Sequential"
     },
     
-    "Q23": {
+     {
         "question": "Which of the following is a (type of) functional requirement?",
         "answers" : [
             "Supportability requirement",
@@ -270,35 +270,13 @@
 
         ],
         "correct_answers": "User interface requirement"
-    },
-    
-    "Q24": {
-        "question": "",
-        "answers" : [
-            "",
-            "",
-            "",
-            ""
-
-        ],
-        "correct_answers": ""
-    },
-    
-    "Q25": {
-        "question": "",
-        "answers" : [
-            "",
-            "",
-            "",
-            ""
-
-        ],
-        "correct_answers": ""
     }
+    
 
 
-}
-   
-        
-        
-        
+
+]
+
+
+
+
