@@ -3,6 +3,8 @@ import React, {useState} from "react";
 
 
 const Quiz = () => {
+
+
     const questionsData = [
 
         {
@@ -280,6 +282,7 @@ const Quiz = () => {
 
     ]
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [points, setPoints] = useState(0);
     const [quiz, setQuiz] = useState([])
 
     //
@@ -291,10 +294,13 @@ const Quiz = () => {
     // });
     // const [questionsData, setQuestions] = React.useState (questions)
     // questions.map((question, val) => console.log(question.question, val));
-    function handleAnswer(answerQuestion) {
+    function handleAnswer(e) {
         const nextQuestion = currentQuestion + 1;
         setCurrentQuestion(nextQuestion)
-
+    let userAnswer = e.target.innerHTML;
+        if(userAnswer===questionsData[currentQuestion].correct_answers){
+          setPoints(points+1)
+        }
     }
 
 // console.log(ques)
@@ -304,11 +310,13 @@ const Quiz = () => {
 <div className="progress">{currentQuestion+1}/{questionsData.length} completed</div>            <h1>Q{currentQuestion + 1}</h1>
             <h3>{questionsData[currentQuestion].question}</h3>
             <div className="choice-group">
+
                 {questionsData[currentQuestion].answers.map((answerOption, index) => (
                     <button onClick={handleAnswer} className="choice">{answerOption}</button>
                 ))}
 
             </div>
+            <h3>{points}</h3>
         </div>
         
     )
