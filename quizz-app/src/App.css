@@ -69,3 +69,26 @@ h1, h4 {
   color: #ffff;
   background-color: #518A92;
 }
+
+.End{
+  margin-top: 8em;
+  text-align: center;
+}
+
+.Results {
+  color: #ffff;
+  background-color: #518A92 ;
+  border-radius: 15px;
+  width: 25%;
+  margin: 2em auto;
+  padding: 20px;
+}
+
+.Round-Info{
+  border: 1px solid #518A92;
+  border-radius: 15px;
+  border-radius: 15px;
+  width: 25%;
+  margin: 2em auto;
+  padding: 20px;
+}

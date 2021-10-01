@@ -1,5 +1,6 @@
 import '../App.css'
 import React, {useState} from "react";
+import GameOver from './GameOver';
 
 
 const Quiz = () => {
@@ -283,40 +284,40 @@ const Quiz = () => {
     ]
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [points, setPoints] = useState(0);
-    const [quiz, setQuiz] = useState([])
 
-    //
-    // questionsData.map(({question, answers, correct_answers})=>{
-    //
-    //     setQuiz({question_1:questionsData.question,options:questionsData.answers})
-    //     console.log(`${question_1} with quantity ${options}`)
-    //
-    // });
-    // const [questionsData, setQuestions] = React.useState (questions)
-    // questions.map((question, val) => console.log(question.question, val));
     function handleAnswer(e) {
         const nextQuestion = currentQuestion + 1;
         setCurrentQuestion(nextQuestion)
-    let userAnswer = e.target.innerHTML;
+        let userAnswer = e.target.innerHTML;
         if(userAnswer===questionsData[currentQuestion].correct_answers){
           setPoints(points+1)
         }
     }
 
-// console.log(ques)
     return (
 
+        
+
         <div className="quizz-page">
-<div className="progress">{currentQuestion+1}/{questionsData.length} completed</div>            <h1>Q{currentQuestion + 1}</h1>
-            <h3>{questionsData[currentQuestion].question}</h3>
-            <div className="choice-group">
+            { questionsData[currentQuestion] &&
 
-                {questionsData[currentQuestion].answers.map((answerOption, index) => (
-                    <button onClick={handleAnswer} className="choice">{answerOption}</button>
-                ))}
-
-            </div>
-            <h3>{points}</h3>
+                <>
+                    <div className="progress">{currentQuestion+1}/{questionsData.length} completed</div>          
+                    <h1>Q{currentQuestion + 1}</h1>
+                    <h3>{questionsData[currentQuestion].question}</h3>
+                    <div className="choice-group">
+        
+                        {questionsData[currentQuestion].answers.map((answerOption, index) => (
+                            <button onClick={handleAnswer} className="choice">{answerOption}</button>
+                        ))}
+        
+                    </div>
+                </>
+            }
+            
+            {
+               currentQuestion === questionsData.length && <GameOver pts={points} qComplete ={currentQuestion}/>
+            }
         </div>
         
     )
