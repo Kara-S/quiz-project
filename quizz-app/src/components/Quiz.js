@@ -1,6 +1,10 @@
 import '../App.css'
 import React, {useState} from "react";
 import GameOver from './GameOver';
+import CountdownTimer from './CountdownTimer';
+
+const MinSecs = {minutes: 0, seconds: 10}
+  
 
 
 const Quiz = () => {
@@ -302,6 +306,7 @@ const Quiz = () => {
             { questionsData[currentQuestion] &&
 
                 <>
+                    <CountdownTimer MinSecs={MinSecs}/>
                     <div className="progress">{currentQuestion+1}/{questionsData.length} completed</div>          
                     <h1>Q{currentQuestion + 1}</h1>
                     <h3>{questionsData[currentQuestion].question}</h3>
@@ -314,7 +319,6 @@ const Quiz = () => {
                     </div>
                 </>
             }
-            
             {
                currentQuestion === questionsData.length && <GameOver pts={points} qComplete ={currentQuestion}/>
             }
